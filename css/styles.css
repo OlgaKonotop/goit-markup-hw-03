@@ -25,8 +25,8 @@
   margin-right: auto;
   margin-left: auto;
 
-  /* outline: 2px solid red;
-  outline-offset: -2px; */
+  outline: 2px solid red;
+  outline-offset: -2px;
 }
 
 /* reset styles */
@@ -50,6 +50,22 @@ p {
   padding: 0;
   margin: 0;
 }
+
+/**
+  |============================
+  | Card set
+  |============================
+*/
+.card-set {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--indent);
+}
+
+.card-set-item {
+  flex-basis: calc((100% - var(--indent) * (var(--items) - 1)) / var(--items));
+}
+
 img {
   display: block;
 }
@@ -136,12 +152,17 @@ padding-bottom: 32px;} */
 }
 
 /*Секція Герой Hero  */
+.hero-container {
+  padding-top: 200px;
+padding-bottom: 200px;}
+
 .hero {
   background-color: var(--bg-dark-cl);
   text-align: center;
 }
 .hero-title {
   margin-bottom: 30px;
+  
 
   font-weight: 900;
   font-size: 44px;
@@ -247,6 +268,7 @@ padding-bottom: 32px;} */
   display: flex;
   gap: var(--indent);
   flex-wrap: wrap;
+  --items: 3;
 }
 
 /*  Section team */
@@ -268,8 +290,6 @@ padding-bottom: 32px;} */
   padding-bottom: 94px;
 }
 .team-wraper {
-  /* border: 1px solid #fff;
-  border-top: none; */
   padding-top: 30px;
   padding-bottom: 30px;
   padding-right: 5px;
@@ -307,7 +327,7 @@ padding-bottom: 32px;} */
   padding-top: 60px;
 }
 .footer-logo {
-  display: block;  
+  display: block;
   margin-bottom: 20px;
 
   color: #ffffff;
@@ -346,6 +366,7 @@ padding-bottom: 32px;} */
   padding-top: 100px;
   padding-bottom: 50px;
   gap: 8px;
+  
 }
 .btn {
   padding: 5px 21px;
@@ -371,19 +392,19 @@ padding-bottom: 32px;} */
   display: flex;
   flex-wrap: wrap;
   gap: var(--indent);
+  --items: 3;
 }
 
 .portfolio-wraper {
- border: 1px solid #EEEEEE;
-  border-top: none; 
+  border: 1px solid #eeeeee;
+  border-top: none;
   padding-top: 20px;
   padding-bottom: 20px;
-  padding-right:24px;
+  padding-right: 24px;
   padding-left: 24px;
-
 }
 .examples-title {
-margin-bottom: 4px;
+  margin-bottom: 4px;
 
   font-weight: 700;
   font-size: 18px;
