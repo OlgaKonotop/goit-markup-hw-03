@@ -13,6 +13,8 @@
   --bg-light-cl: #e5e5e5;
 
   /* others */
+  --indent: 30px;
+  --items: 4;
 }
 
 /* Base styles */
@@ -190,6 +192,17 @@ padding: 9px 31px;
   overflow: hidden;
 }
 
+.about-list {
+   display: flex;
+  gap: var(--indent);
+  flex-basis: calc((100% - 3 * 30px) / 4);
+  padding-top: 94px; 
+  flex-wrap: wrap;
+  }
+
+ .about-item {
+  max-width: 270px;  
+}
 .about-title,
 .about-text {
   font-size: 14px;
@@ -197,6 +210,8 @@ padding: 9px 31px;
 }
 
 .about-title {
+  margin-bottom: 10px;
+
   font-weight: 700;
   line-height: calc(16 / 14);
   text-transform: uppercase;
@@ -216,6 +231,20 @@ padding: 9px 31px;
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--main-txt-cl);
+}
+
+.work-container {
+  padding-top: 94px;
+  
+}
+.work-title {
+padding-bottom: 50px;}
+
+
+.work-list {
+display: flex;
+gap: 30px;
+flex-wrap: wrap;
 }
 
 /*  Section team */
